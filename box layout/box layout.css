@@ -3,8 +3,6 @@ body {
     margin-top: 10vh;
     width:40vw;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -17,7 +15,7 @@ header {
 }
 
 main {
-    display: flex;
+    display: flex; /*부모가 생기면 그 부모도 flex로 만들어야함*/
     justify-content: space-between;
     width:100%;
     margin-bottom: 10px;
