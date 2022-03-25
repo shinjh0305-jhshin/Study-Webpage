@@ -1,0 +1,77 @@
+:root {
+    --hamburger-bg:crimson;  
+    --body-bg:crimson; 
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    background:var(--body-bg);
+}
+
+body, label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    opacity: 0;
+}
+.hamburger-title {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.hamburger-container {
+    position:relative;
+    width:100px;
+    height:100px;
+    background:var(--hamburger-bg);
+}
+
+.hamburger {
+    width:100%;
+    height:10px;
+    background:white;
+}
+
+/*가상 요소라도 전부 별개로 취급해야 한다.*/
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+    width: 100%;
+    height:10px;
+    background: white;
+    transition: 0.5s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content:"";
+}
+
+.hamburger {/*중간 선*/
+    top:50%;
+    transition:0s;
+}
+/*hamburger가 위치의 기준이 된다*/
+.hamburger::before { /*상단 선*/
+    top:-30px;
+}
+.hamburger::after { /*하단 선*/
+    top:30px;
+}
+.toggle:checked ~ .hamburger::after {
+    top:0; /*hamburger 위치로 간다*/
+    transform: rotate(225deg);
+}
+.toggle:checked ~ .hamburger::before {
+    top:0;
+    transform: rotate(135deg);
+}
+.toggle:checked ~ .hamburger { /*배경색과 똑같이 해서 안보이게 한다*/
+    background: var(--hamburger-bg);
+}
