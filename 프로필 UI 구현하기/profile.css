@@ -1,0 +1,18 @@
+body {
+    background-color: #ff9eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.structure {
+    max-width :360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_pic {
+    width:0; /*삭제 예정*/
+}
