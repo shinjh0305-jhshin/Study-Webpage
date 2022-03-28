@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&family=Roboto:wght@300;400;700&display=swap');
+@import "./reset.css";
+@import "./variable.css";
+
+* {
+    box-sizing: border-box; /*화면 밖으로 요소가 안 벗어나게 하기 위함*/
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-purple);
+    color: white;
+}
+
+.login-title {
+    text-align: center;
+}
+.login-title__maintext {
+    font-family: 'Jua', sans-serif;
+    font-size: 2.5rem;
+    color: var(--purple);
+    padding: 1rem;
+}
+.login-title__subtext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 150%;
+}
+
+input {
+    border: none;
+    outline: none; /*선택했을 때, 테두리가 변하지 않게 한다*/
+    appearance: none;
+}
