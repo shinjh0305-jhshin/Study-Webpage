@@ -1,4 +1,5 @@
 body {
+    overflow: hidden;
     background-color: #ff9eaa;
     display: flex;
     height:100vh;
