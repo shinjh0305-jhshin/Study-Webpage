@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import "./reset.css";
 @import "./variable.css";
 
@@ -31,4 +33,14 @@ input {
     border: none;
     outline: none; /*선택했을 때, 테두리가 변하지 않게 한다*/
     appearance: none;
+}
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-relative {
+    position: relative;
 }
