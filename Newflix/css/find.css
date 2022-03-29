@@ -37,7 +37,48 @@
 }
 
 .recommended__top__movie {
-    width:100vw;
-    
-    border-radius: 25px;
+    width: 22rem;
+    height:12rem;
+    border-radius: 25px;  
+}
+
+.recommended__top span {
+    position: absolute;
+    background-color: var(--purple);
+    border-radius: 50%;
+    left: calc(50% + 5rem);
+    font-size: 5rem;
+    bottom: -2.3rem;
+}
+
+.recommended__title {
+    padding-left: 25px;
+}
+
+.recommended__text {
+    font-size: 14px;      
+}
+.recommended__name {
+    color:var(--purple);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.movie-recommendation {
+    margin:25px 0;
+    padding:0 25px;
+}
+.movie-recommendation__img {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+}
+.movie-recommendation__img li {
+    margin-left: 5px;
+}
+
+.movie-recommendation__img img {
+    width: 150px;
+    border-radius: 15px;
 }
