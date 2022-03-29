@@ -2,6 +2,10 @@
 
 body {
    overflow: hidden; /*창에서 벗어나는 내용은 싹다 감춘다*/
+   height:100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .login-form {
