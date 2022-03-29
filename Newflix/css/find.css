@@ -82,3 +82,25 @@
     width: 150px;
     border-radius: 15px;
 }
+
+
+.go_back {
+    display: flex;
+    justify-content: center;
+}
+
+button[id="logout"] {
+    margin-top: 30px;
+    margin-bottom: 10vh;
+    padding:15px 120px;
+    border: none;
+    background-color: var(--darkpurple);
+    border-radius: 20px;
+    font-size: 12pt;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+button[id="logout"]:active {
+    background-color: var(--purple);
+}
