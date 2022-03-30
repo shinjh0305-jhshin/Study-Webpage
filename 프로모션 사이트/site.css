@@ -91,3 +91,21 @@ ul, li {
     display: inline-block;
     list-style-type: none;
 }
+
+.intro_section2 {
+    margin-top: -150px;
+    padding: 0 120px;
+    position: relative;
+}
+
+.intro_section2 img {
+    width: 80%;
+}
+
+.intro_section2 .img_deco_copy {
+    position: absolute;
+    top: 65%;
+    right: -10%;
+    font-size: 8vw;
+    font-weight: 800;
+}
