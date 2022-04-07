@@ -95,7 +95,7 @@ a {
 
 .filter_section .filter_item .select_box {
     position: absolute;
-    top: -265px;
+    top: 52px;
     left: -1px;
     background-color: #fff;
     width: 110px;
@@ -103,12 +103,10 @@ a {
     border-right: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     font-weight: 400;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     text-align: center;
     line-height: 53px;
-    opacity: 0;
-    transition: all 0.5s ease-out;
 }
 .filter_section .filter_item .select_box.region_select_box {
     width: 330px;
@@ -117,6 +115,29 @@ a {
     width: 110px;
 }
 .filter_section .filter_item:hover .select_box {
-    opacity: 1;
-    transform: translateY(317px);
+    display: flex;
 }
+
+.recruit_items_section {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 15px 0 50px;
+}
+.recruit_items_section .recruit_item {
+    position: relative;
+    width: 410px;
+    height: 378px;
+    vertical-align: top;
+    margin: 20px 15px;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0px 0px 30px #eee;
+}
+.recruit_items_section .recruit_item .rc_img {
+    height: 120px;
+}
+.recruit_items_section .recruit_item .rc_contents {
+    padding: 25px 30px;
+}
+
