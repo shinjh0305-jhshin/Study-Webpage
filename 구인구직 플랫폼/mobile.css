@@ -1,0 +1,66 @@
+@media only screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header .main_menu {
+        display: none;;
+    }
+
+    .mobile_view {
+        display: inherit !important;
+    }
+    .mobile_hidden {
+        display: none !important;
+    }
+
+    .header {
+        width: 100%;
+        padding-top: 11px;
+        border-bottom: none;
+        height: 40px;
+    }
+    .header .logo_section a {
+        font-size: 19px;
+        top: 0.75em;
+        left: 1em;
+    }
+    .header .page_title {
+        left: 110px;
+        padding-left: 15px;
+        font-size: 13px;
+        margin-top: 6px;
+    }
+    .header .mobile_menu {
+        position: absolute;
+        right: 2em;
+        top: 1.05em;
+    }
+
+    .filter_section {
+        border-top: 1px solid #efefef;
+        height: 40px;
+        z-index: 10;
+    }
+    .filter_section .filter_deco {
+        display: none;
+    }
+    .filter_section .filter_item {
+        font-size: 11px;
+        line-height: 30px;
+        width: 80px;
+        height: auto;
+    }
+    .filter_section .filter_item .select_box {
+        top: 40px;
+    }
+    .filter_section .filter_item .select_box {
+        width: 80px;
+    }
+    .filter_section .filter_item .select_box.region_select_box {
+        width: 100vw;    
+    }
+    .filter_section .filter_item .select_box li{
+        width: 80px;
+    }
+
+}

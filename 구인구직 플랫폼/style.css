@@ -251,3 +251,7 @@ a {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.mobile_view {
+    display: none !important;
+}
